@@ -455,19 +455,22 @@ color:lightgray;
 
 /*footer*/
 .footer{
-  background-color: rgba(0,0,0,1);
+  border-top: 0.05em solid rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  /* width: 30vw; */
 }
 .footer-nav{
   display: flex;
   flex-direction:row;
-    justify-content:space-between;
+    justify-content:flex-end;
     padding-left: 2vw;
 }
 .footer-nav-left h4{
   font-family: 'Open Sans', sans-serif;
   font-size: 10px;
   font-weight: 300;
-  color:white;
+  color:black;
   padding: 1em 2em 1em 2em;
 
 }

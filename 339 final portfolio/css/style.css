@@ -1,0 +1,260 @@
+.top-nav a,.left-nav a,
+.main_navigation_render a
+{
+  position: relative;
+  text-decoration: none;
+}
+.top-nav a::after,.left-nav a::after,
+.main_navigation_render a::after{
+ content: '';
+ display: block;
+ width: 0;
+ height: 2px;
+ position: absolute;
+ left: 0;
+ border-radius: 5px;
+ /* bottom: -18px; */
+ background:rgba(0,0,0);
+ transition:all 0.3s ease-in-out;
+ -webkit-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+}
+.top-nav a:hover::after, .left-nav a:hover::after,
+.main_navigation_render a:hover::after{
+ width: 100%;
+}
+
+
+
+
+
+
+.top{
+  display: flex;
+  flex-direction: row;
+  padding-top: 3vh;
+  align-items: baseline;
+}
+.top-logo a{
+  text-decoration: none;
+  font-family: 'Bowlby One SC', cursive;
+  color: rgba(50, 50, 50, 0.3);
+  font-size: 35px;
+  padding-left: 5vw;
+}
+.top-logo a:hover{
+color: black;
+}
+.top_logo a:visited{
+  color: rgba(50, 50, 50, 0.3);
+}
+.top-nav{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 10vw;
+}
+.top-nav a{
+  margin-left: 1vw;
+  color: rgba(0, 0, 0, 0.5);
+}
+.top-nav a:hover{
+  color:black;
+}
+
+.main-page{
+display: flex;
+flex-direction: row;
+}
+
+
+.body{
+  background-color: #f4efe6;
+}
+
+.main-page-content{
+flex:1;
+order:1;
+padding-top: 20vh;
+}
+.content h2{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size:55px;
+  font-weight: 300;
+  padding-left: 10vw;
+  padding-right: 2vw;
+}
+
+.bt{
+  padding: 1vw 1vh 1vw 1vh;
+}
+
+.bt h4{
+  font-family: 'Lato', sans-serif;
+  font-size:20px;
+  font-weight: 400;
+  padding-top: 4vw;
+  padding-left: 9vw;
+
+}
+.bt a{
+  border: .1em solid rgba(50, 50, 50, 0.3);
+  border-radius: 15px;
+  background-color: #f4efe6;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  text-decoration: none;
+  color: rgba(50, 50, 50, 0.6)
+}
+
+.bt a:hover{
+  color: white;
+  background-color: gray;
+  border: .1em solid gray;
+}
+
+
+/* svg animation */
+
+.main-page-animation{
+  flex:1;
+  order: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5vw;
+}
+
+.text {
+  font-size: 200px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 19, ../../src/css/source/_chat.scss */
+svg {
+  position: absolute;
+  width: 70vw;
+  height: auto;
+}
+
+
+
+/* line 27, ../../src/css/source/_chat.scss */
+.use-text {
+  fill: none;
+  stroke: white;
+  stroke-dashoffset: 35%;
+  stroke-dasharray: 0 87.5%;
+  stroke-width: 3px;
+  stroke-linecap: round;
+
+}
+
+/* line 38, ../../src/css/source/_chat.scss "#33B5E5","#0099CC","#AA66CC","#9933CC","#99CC00","#669900","#FFBB33","#FF8800","#FF4444","#CC0000"*/
+.use-text:nth-child(1) {
+  stroke: #CDC9C0;
+  animation: animation1 10s infinite ease-in-out forwards;
+
+}
+/* line 38, ../../src/css/source/_chat.scss */
+.use-text:nth-child(2) {
+  stroke: #CDC9C0;
+  animation: animation2 10s infinite ease-in-out forwards;
+
+}
+/* line 38, ../../src/css/source/_chat.scss */
+.use-text:nth-child(3) {
+  stroke:#CDC9C0;
+  animation: animation3 10s infinite ease-in-out forwards;
+
+}
+/* line 38, ../../src/css/source/_chat.scss */
+.use-text:nth-child(4) {
+  stroke:#CDC9C0;
+  animation: animation4 10s infinite ease-in-out forwards;
+
+}
+/* line 38, ../../src/css/source/_chat.scss */
+.use-text:nth-child(5) {
+  stroke: #CDC9C0;
+  animation: animation5 10s infinite ease-in-out forwards;
+
+}
+
+@keyframes animation1 {
+  50%{
+      stroke-dasharray: 7% 28%;
+      stroke-dashoffset: 7%;
+    }
+    70%{
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 7%;
+      }
+}
+@keyframes animation2 {
+  50%{
+      stroke-dasharray: 7% 28%;
+      stroke-dashoffset: 14%;
+    }
+    70%{
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 14%;
+      }
+}
+@keyframes animation3 {
+  50%{
+      stroke-dasharray: 7% 28%;
+      stroke-dashoffset: 21%;
+    }
+    70%{
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 21%;
+      }
+}
+@keyframes animation4 {
+  50%{
+      stroke-dasharray: 7% 28%;
+      stroke-dashoffset: 28%;
+    }
+    70%{
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 28%;
+      }
+}
+@keyframes animation5 {
+  50%{
+      stroke-dasharray: 7% 28%;
+      stroke-dashoffset: 35%;
+    }
+    70%{
+        stroke-dasharray: 7% 28%;
+        stroke-dashoffset: 35%;
+      }
+}
+
+/* footer */
+
+.footer{
+  border-top: 0.05em solid rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  /* width: 30vw; */
+}
+.footer-nav{
+  display: flex;
+  flex-direction:row;
+    justify-content:flex-end;
+    padding-left: 2vw;
+}
+.footer-nav-left h4{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  color:black;
+  padding: 1em 2em 1em 2em;
+
+}
+.footer-nav-right{
+  color:white;
+
+}
