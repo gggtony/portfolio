@@ -340,7 +340,7 @@ svg {
   opacity: 1;
 }
 
-.sitem img:hover{
+.stem img:hover{
   opacity: 1;
 }
 .sitem:hover h3{
@@ -550,17 +550,15 @@ order:2;
   width:60vw;
   padding-top: 5vw;
 }
-
-#slist { overflow-x: auto;
+#slist{
+        overflow-x: auto;
         list-style: none;
         white-space:nowrap;
-         width: auto;
-         margin-top: 3vw;
-         border-radius: 20px;
-         background-color: rgba(200, 200, 200, 0.2);
-       }
-
-
+        width: auto;
+        margin-top: 3vw;
+        border-radius: 20px;
+        background-color: rgba(200, 200, 200, 0.2);
+      }
 
 .sitem {
   margin-left: 10px;
@@ -798,3 +796,28 @@ width:70%;
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+
+<div class='demovideo'>
+
+  <video controls>
+    <source src="stemcell.mp4" type="video/mp4">
+      <source src="mov_bbb.ogg" type="video/ogg">
+      </video>
+
+</div>
+<div class="image2">
+<ul id = "list">
+<li class = "item">      <h3>Footage</h3><img src="img/ds0.png" alt="No image"> </li>
+<li class = "item">       <h3>Roto</h3><img src="img/ds2.png" alt="No image"> </li>
+<li class = "item">      <h3>Keylight</h3><img src="img/ds1.png" alt="No image"></li>
+<li class = "item">      <h3>Background matching</h3><img src="img/ds3.png" alt="No image"></li>
+<li class = "item">      <h3>Deliver</h3><img src="img/ds4.png" alt="No image"></li>
+</ul>
+</div>
