@@ -80,6 +80,7 @@ color: black;
   font-weight: 300;
   padding-left: 5vw;
   width: 60%;
+  text-align: center;
 }
 .top-nav a{
   margin-left: 1vw;
@@ -527,6 +528,22 @@ order:2;
   color: rgba(88, 122, 176,1);
 
 }
+
+
+
+/* demoreel */
+.main-page-demoreel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.demovideo video{
+  width:60vw;
+  padding-top: 5vw;
+}
+
+
+
 
 /* about page */
 @media screen and (max-width:1081px){
