@@ -1,4 +1,5 @@
 *{
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@
  border-radius: 5px;
  /* bottom: -18px; */
  background:rgba(0,0,0);
+ -o-transition:all 0.3s ease-in-out;
  transition:all 0.3s ease-in-out;
  -webkit-transition: all 0.3s ease-in-out;
  -moz-transition: all 0.3s ease-in-out;
@@ -39,7 +41,12 @@
 
 /* body order */
 .body{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f4efe6;
 }
@@ -47,9 +54,16 @@
 
 /* top */
 .top{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   padding-top: 3vh;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
 }
 .top-logo a{
@@ -82,17 +96,31 @@ color: black;
   color:black;
 }
 
+
 /* meterial */
 .meterial{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 .meterial-nav{
+  -webkit-box-flex:1;
+  -ms-flex:1;
   flex:1;
+  -webkit-box-ordinal-group:2;
+  -ms-flex-order:1;
   order:1;
 }
 .meterial-render{
+  -webkit-box-flex:3;
+  -ms-flex:3;
   flex:3;
+  -webkit-box-ordinal-group:3;
+  -ms-flex-order:2;
   order:2;
 }
 
@@ -222,24 +250,36 @@ padding-bottom: 0.5em;
 
 }
 .navigation_link_render{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .navigation_link_render h4{
-  background-color: gray;
+  background-color: #f4efe6;
   opacity: 0.9;
-  padding:.8em 1em .8em 1em;
-  border-radius: 1.2em;
+  padding: 1vw 1vh 1vw 1vh;
+  border: .1em solid rgba(50, 50, 50, 0.3);
+  border-radius: 15px;
 }
 .navigation_link_render h4:hover{
-  background-color: lightgray;
+  background-color: gray;
+  border: .1em solid gray;
+  color: white;
 }
 .navigation_link_render a{
   font-weight: 600;
-  color:white;
+  color: rgba(50, 50, 50, 0.6)
 }
-
+.navigation_link_render a:hover{
+  color: white;
+}
 .navigation_link_render img{
   margin-left: 6em;
   opacity: 0.6;
@@ -250,9 +290,15 @@ padding-bottom: 0.5em;
   opacity:0.3;
 }
 .image_as_a_link_render{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width:50vw;
+  -webkit-box-align:end;
+  -ms-flex-align:end;
   align-items:flex-end;
 }
 .image_as_a_link_render_text{
@@ -292,10 +338,16 @@ padding-bottom: 0.5em;
 }
 
 .video_show_render{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align:end;
+  -ms-flex-align:end;
   align-items:flex-end;
   text-align: right;
   width:50vw;
+  -webkit-box-pack:justify;
+  -ms-flex-pack:justify;
   justify-content:space-between;
 }
 .video_show_render_text h4{
@@ -409,8 +461,15 @@ padding-bottom: 0.5em;
     padding-bottom: 1em;
 }
 .work_listing_render_1_text,.work_listing_render_2_text{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient:  vertical;
+  -webkit-box-direction:  normal;
+  -ms-flex-direction:  column;
   flex-direction:  column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width:50vw;
 }
@@ -450,13 +509,24 @@ color:lightgray;
 /*footer*/
 .footer{
   border-top: 0.05em solid rgba(0,0,0,0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   /* width: 30vw; */
 }
 .footer-nav{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:row;
   flex-direction:row;
+    -webkit-box-pack:end;
+    -ms-flex-pack:end;
     justify-content:flex-end;
     padding-left: 2vw;
 }
@@ -465,7 +535,7 @@ color:lightgray;
   font-size: 10px;
   font-weight: 300;
   color:black;
-  padding: 1em 2em 1em 2em;
+  padding: 1em 2em 0em 2em;
 
 }
 .footer-nav-right{
