@@ -509,7 +509,7 @@ svg {
   border-top: .01em solid black;
 }
 
-.work_listing_render_1_title h4,.work_listing_render_2_title h4{
+.work_listing_render_1_title p,.work_listing_render_2_title p{
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -532,7 +532,7 @@ svg {
   padding-top: 5vw;
 
 }
-.work_listing_render_1_text h4,.work_listing_render_2_text h4{
+.work_listing_render_1_text p,.work_listing_render_2_text p{
   width: 78%;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -574,6 +574,7 @@ svg {
   margin-top: 3vw;
   border-radius: 20px;
   background-color: rgba(50, 50, 50, 0.1);
+    box-shadow: 10px 10px 10px lightgrey;
 }
 
 .item {
@@ -616,7 +617,12 @@ svg {
 }
 
 
-/* video */
+/* paragraphs */
+.process-text p{
+  padding-left: 20px;
+  width:25vw;
+
+}
 
 
 
@@ -751,6 +757,7 @@ svg {
   margin-top: 3vw;
   border-radius: 20px;
   background-color: rgba(200, 200, 200, 0.2);
+    box-shadow: 10px 10px 10px lightgrey;
 }
 
 
@@ -921,7 +928,7 @@ font-weight: 300;
 
 /* showreel page */
 @media screen and (max-width:557px){
-  .work_listing_render_1_text h4{
+  .work_listing_render_1_text p{
     padding-left: 10vw;
   }
   .work_listing_render_1_text h3,.work_listing_render_2_text h3{
@@ -990,7 +997,11 @@ font-weight: 300;
   .process-text{
     width:60vw;
     order:2;
-    padding-top: 8vw;
+    padding-top: 3vw;
+  }
+  .process-text p{
+    width:100%;
+    padding-left: 0px;
   }
   .process-image{
       order:1;
